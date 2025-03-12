@@ -1,3 +1,7 @@
-dnstest.themesong.io {
+themesong.io {
     reverse_proxy themesong-client:8080
+}
+
+api.themesong.io {
+    reverse_proxy themesong-api:8000
 }
