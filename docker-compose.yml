@@ -18,6 +18,8 @@ services:
       - DOMAINS=themesong.io
       - PROXIED=true
   caddy:
+    env_file:
+      - .env
     image: caddy:latest
     container_name: themesong-caddy
     ports:
