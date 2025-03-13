@@ -25,5 +25,9 @@ services:
       - "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
     networks:
       - themesong-network
+
+volumes:
+  caddy_data:
